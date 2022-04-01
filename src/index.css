@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+    overflow-x: hidden;
+}
+
+.links-container {
+    transition: all 0.3s ease;
+}
+
+@media(min-width:768px) {
+    .links-container {
+        height: auto !important;
+    }
+}
+
+.star {
+    fill: #c0c0c0;
+}
+
+h1 {
+    @apply text-3xl font-bold text-[#282828];
+}
+
+.playfair {
+    font-family: 'Playfair Display', serif;
+    @apply text-[#FAFAFA] mb-11;
+}
+
+.header-btn {
+    @apply bg-[#EFEFEF] font-medium px-4 py-2 m-auto rounded-sm transition;
+    /* @apply; */
+    /* @apply ; */
+}
+
+@media(max-width:837px) {
+    .header-img {
+        display: none;
+    }
+    .container {
+        background: url(./img/headerImg.png);
+        background-position: right top;
+        @apply h-[70vh];
+        background-repeat: no-repeat;
+    }
+    .shop-header {
+        background-image: url(./img/sportswear.png);
+        background-position: right top;
+        @apply h-[50vh];
+        background-repeat: no-repeat;
+    }
+}
+
+@media(max-width:460px) {
+    .right {
+        @apply flex flex-col justify-center items-center text-center;
+    }
+}
+
+@media(max-width:349px) {
+    .playfair {
+        @apply text-2xl;
+    }
+}
