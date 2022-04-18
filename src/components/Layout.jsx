@@ -10,9 +10,7 @@ import Cart from './Cart';
 
 
 const Layout = () => {
-    const [toggleLinks, setToggleLinks] = useState(false);
-    const [cartOpened, setCartOpened] = useState(false)
-    
+    const [toggleLinks, setToggleLinks] = useState(false);    
     return (
         <div>
             <nav className='w-screen lg:px-24 px-12 py-2 bg-[#282828] flex justify-between md:items-center z-10  sticky top-0'>
@@ -35,7 +33,7 @@ const Layout = () => {
                 
                 <div className="elements flex justify-between items-start w-16 mt-3 md:mt-0 cursor-pointer">
                     <button className='text-[#C0C0C0] text-xl cursor-pointer hover:text-white'>
-                        <BsBag onClick={() => setCartOpened(true)}/>
+                        <BsBag/>
                     </button>
                     <button className='text-[#C0C0C0] text-xl cursor-pointer hover:text-white ml-3'>
                         <BsHeart />
@@ -47,7 +45,6 @@ const Layout = () => {
                         <RiMenu2Fill/>
                     </button>
                 </div> 
-                <Cart cartOpened={cartOpened} setCartOpened={setCartOpened}/>
             </nav>
             <Outlet/>
             <Footer/>
