@@ -14,7 +14,7 @@ const Footer = () => {
                     {links.map((link)=> {
                                 const {id, url, text} = link;
                                 return (
-                                    <Link to={url} className='py-2 hover:text-white capitalize font-medium'>{text}</Link>
+                                    <Link key={id} to={url} className='py-2 hover:text-white capitalize font-medium'>{text}</Link>
                                 )
                     })}
                 </div>             

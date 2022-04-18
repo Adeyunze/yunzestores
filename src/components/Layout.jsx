@@ -6,11 +6,13 @@ import { BsBag, BsHeart } from 'react-icons/bs';
 import { RiMenu2Fill } from 'react-icons/ri';
 import { Link, Outlet } from 'react-router-dom';
 import Footer from './Footer';
-
+import Cart from './Cart';
 
 
 const Layout = () => {
     const [toggleLinks, setToggleLinks] = useState(false);
+    const [cartOpened, setCartOpened] = useState(false)
+    
     return (
         <div>
             <nav className='w-screen lg:px-24 px-12 py-2 bg-[#282828] flex justify-between md:items-center z-10  sticky top-0'>
@@ -33,7 +35,7 @@ const Layout = () => {
                 
                 <div className="elements flex justify-between items-start w-16 mt-3 md:mt-0 cursor-pointer">
                     <button className='text-[#C0C0C0] text-xl cursor-pointer hover:text-white'>
-                        <BsBag />
+                        <BsBag onClick={() => setCartOpened(true)}/>
                     </button>
                     <button className='text-[#C0C0C0] text-xl cursor-pointer hover:text-white ml-3'>
                         <BsHeart />
@@ -44,7 +46,8 @@ const Layout = () => {
                     <button className='text-[#C0C0C0] text-xl mt-3 ml-6 cursor-pointer hover:text-white hover:rotate-90 transition' onClick={()=> setToggleLinks(!toggleLinks)}>
                         <RiMenu2Fill/>
                     </button>
-                </div>
+                </div> 
+                <Cart cartOpened={cartOpened} setCartOpened={setCartOpened}/>
             </nav>
             <Outlet/>
             <Footer/>
