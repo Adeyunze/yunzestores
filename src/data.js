@@ -19,19 +19,4 @@ export const links = [
         url: '/women',
         text: 'women',
     },
-    {
-        id: 4,
-        url: '/',
-        text: 'accessories',
-    },
-    {
-        id: 5,
-        url: '/',
-        text: 'blog',
-    },
-    {
-        id: 6,
-        url: '/',
-        text: 'gifts',
-    },
 ]

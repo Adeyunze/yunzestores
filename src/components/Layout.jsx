@@ -21,17 +21,17 @@ const Layout = () => {
                         </Link>
                         
                     </div> 
-                    <div className={`${toggleLinks ? "links-container text-[#C0C0C0] flex flex-col rounded-b-lg md:mt-0 md:flex-row md:justify-between md:w-96 capitalize font-medium shrink-0 mt-6 overflow-hidden" : "links-container text-[#C0C0C0] flex flex-col  md:mt-0 md:flex-row md:justify-between md:w-96 capitalize font-medium shrink-0 h-0 overflow-hidden"}`}>
+                    <div className={`${toggleLinks ? "links-container text-[#C0C0C0] flex flex-col rounded-b-lg md:mt-0 md:flex-row md:justify-between md:w-96 capitalize font-medium shrink-0 mt-6 overflow-hidden" : "links-container text-[#C0C0C0] flex flex-col justify-center md:mt-0 md:flex-row  md:w-96 capitalize font-medium shrink-0 h-0 overflow-hidden"}`}>
                         {links.map((link)=> {
                             const {id, url, text} = link;
                             return (
-                                <Link key={id} to={url} className='py-2 hover:text-white'>{text}</Link>
+                                <Link key={id} to={url} className='py-2 hover:text-white px-3'>{text}</Link>
                             )
                         })}
                     </div>
                 </div>
                 
-                <div className="elements flex justify-between items-start w-16 mt-3 md:mt-0 cursor-pointer">
+                <div className="elements flex  items-start w-16 mt-3 md:mt-0 cursor-pointer">
                     <button className='text-[#C0C0C0] text-xl cursor-pointer hover:text-white'>
                         <BsBag/>
                     </button>

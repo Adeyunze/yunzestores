@@ -25,6 +25,7 @@ function App() {
             <Route  path='shop/:id' element={<ProductPage />}/>
             <Route  path='shop' element={<Shop />}/>
             <Route  path='men' element={<Men />}/>
+            <Route  path='women' element={<Women />}/>
             <Route  path='*' element={<Error />}/>
           </Route>
       </Routes>

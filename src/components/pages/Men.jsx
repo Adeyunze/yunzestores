@@ -1,9 +1,11 @@
 import React from 'react';
 
 const Men = () => {
-    return <h1>
-        Mens Page
-    </h1>;
+    return (
+        <div className='h-[75vh]'>
+            <h1>Mens Page</h1>
+        </div>
+    )
 };
 
 export default Men;

@@ -10,11 +10,11 @@ const Footer = () => {
     return (
         <footer>
             <div className='flex flex-col bg-[#282828] text-[#C0C0C0] justify-center items-center pt-5 px-3 mt-6'>
-                <div className='flex flex-row w-[100%] md:w-[30%] justify-between pb-5'>
+                <div className='flex flex-row w-[100%] md:w-[30%] justify-center pb-5'>
                     {links.map((link)=> {
                                 const {id, url, text} = link;
                                 return (
-                                    <Link key={id} to={url} className='py-2 hover:text-white capitalize font-medium'>{text}</Link>
+                                    <Link key={id} to={url} className='py-2 hover:text-white capitalize font-medium px-3'>{text}</Link>
                                 )
                     })}
                 </div>             
