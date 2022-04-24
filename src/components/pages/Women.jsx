@@ -1,9 +1,11 @@
 import React from 'react'
+import {WomenProduct} from '../WomenProduct'
 
 const Women = () => {
     return (
-        <div className='h-[75vh]'>
-            <h1>Womens page</h1>
+        <div className=''>
+            <div className=''></div>
+            <WomenProduct/>
         </div>
     )
 }

@@ -1,11 +1,13 @@
-import React from 'react';
+import React from 'react'
+import {MenProduct} from '../WomenProduct'
 
 const Men = () => {
     return (
-        <div className='h-[75vh]'>
-            <h1>Mens Page</h1>
+        <div className=''>
+            <div className=''></div>
+            <MenProduct/>
         </div>
     )
-};
+}
 
-export default Men;
+export default Men

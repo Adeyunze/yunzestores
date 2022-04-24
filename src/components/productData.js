@@ -6,6 +6,7 @@ export const shop = [
         imageSrc: 'https://xcdn.next.co.uk/Common/Items/Default/Default/ItemImages/AltItemZoom/635333s6.jpg',
         price: '$129',
         color: 'black',
+        gender: "male",
         reviews: '200',
         categories: 'featured'
     },
@@ -15,6 +16,7 @@ export const shop = [
         imageSrc: 'https://xcdn.next.co.uk/common/Items/Default/Default/Publications/G27/shotzoom/170/872-130s.jpg',
         price: '$50',
         color: 'black',
+        gender: "female",
         reviews: '140',
         categories: 'featured'
     },
@@ -25,6 +27,7 @@ export const shop = [
         imageAlt: "Nike Essential Hoodie",
         price: '$20',
         color: 'rainbow',
+        gender: "female",
         reviews: '14',
         categories: 'featured'
     },
@@ -35,6 +38,7 @@ export const shop = [
         imageAlt: "Front of men's Basic Tee in black.",
         price: '$35',
         color: 'black',
+        gender: "male",
         reviews: '120',
         categories: 'trending'
     },
@@ -45,6 +49,7 @@ export const shop = [
         imageAlt: "Essential jeans",
         price: '$40',
         color: 'blue',
+        gender: "male",
         reviews: '112',
         categories: 'trending'
     },
@@ -55,6 +60,7 @@ export const shop = [
         imageAlt: "next T-shirt",
         price: '$30',
         color: 'grey',
+        gender: "male",
         reviews: '104',
         categories: 'trending'
     },
@@ -65,6 +71,7 @@ export const shop = [
         imageAlt: "Lightweight Shorts",
         price: '$25',
         color: 'grey',
+        gender: "male",
         reviews: '54',
         categories: 'trending'
     },
@@ -75,6 +82,7 @@ export const shop = [
         imageAlt: "Jogger Jeans",
         price: '$60',
         color: 'black',
+        gender: "male",
         reviews: '34',
         categories: 'trending'
     },
@@ -85,6 +93,7 @@ export const shop = [
         imageAlt: "Mermaid Blanket",
         price: '$20',
         color: 'rainbow',
+        gender: "female",
         reviews: '14',
         categories: 'trending'
     },
@@ -95,6 +104,7 @@ export const shop = [
         imageAlt: "Hybrid Hoodie Coat",
         price: '$110',
         color: 'black',
+        gender: "female",
         reviews: '3',
         categories: 'trending'
     },
@@ -105,7 +115,28 @@ export const shop = [
         imageAlt: "Graphic sweatshirt",
         price: '$45',
         color: 'pink',
+        gender: "female",
         reviews: '14',
         categories: 'trending'
+    },
+    {
+        id: 13,
+        name: 'Long Sleeve Shirt',
+        imageSrc: 'https://xcdn.next.co.uk/common/Items/Default/Default/Publications/G28/shotzoom/2001/792-430s.jpg',
+        imageAlt: "Long sleeve shirt",
+        price: '$25',
+        color: 'white',
+        gender: "male",
+        reviews: '15'
+    },
+    {
+        id: 14,
+        name: 'Ruched Side Midi Dress',
+        imageSrc: 'https://xcdn.next.co.uk/common/Items/Default/Default/Publications/G64/shotzoom/9/T45-991s.jpg',
+        imageAlt: "Midi Dress",
+        price: '$50',
+        color: 'yellow',
+        gender: "female",
+        reviews: '30'
     },
 ];
