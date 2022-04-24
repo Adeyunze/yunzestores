@@ -18,7 +18,7 @@ const ProductPage = () => {
         <article key={id}>           
             <div className="md:p-12 p-4 w-full h-full flex justify-center items-center">    
                 <div className='flex flex-col md:flex-row h-full md:h-[70vh] justify-between'>
-                    <img src={imageSrc} alt={imageAlt} className='h-full rounded' />
+                    <img src={imageSrc} alt={imageAlt} className='md:h-full rounded' />
                     <div className="flex flex-col text-[#282828] w-full pl-auto md:pl-12 pt-4 md:pt-0">
                         <h2 className='text-xl font-bold'>{name}</h2>
                         <p className='text-3xl pt-3'>{price}</p>
