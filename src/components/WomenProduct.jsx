@@ -3,7 +3,7 @@ import { shop } from './productData';
 import { Link } from 'react-router-dom';
 
 export const WomenProduct = () => {
-  return (
+return (
     <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
             {shop.filter(product => product.gender === 'female').map(filtered => {
                     const  {id, imageSrc, imageAlt, name, color, price} = filtered;
@@ -32,10 +32,10 @@ export const WomenProduct = () => {
                 )
                 })}
         </div>
-  )
+)
 }
 export const MenProduct = () => {
-  return (
+return (
     <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
             {shop.filter(product => product.gender === 'male').map(filtered => {
                     const  {id, imageSrc, imageAlt, name, color, price} = filtered;
@@ -64,6 +64,6 @@ export const MenProduct = () => {
                 )
                 })}
         </div>
-  )
+)
 }
 
