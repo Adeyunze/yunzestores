@@ -8,7 +8,8 @@ export const shop = [
         color: 'black',
         gender: "male",
         reviews: '200',
-        categories: 'featured'
+        categories: 'featured',
+
     },
     {
         id: 2,

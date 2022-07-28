@@ -17,7 +17,6 @@ import Layout from './components/Layout';
 function App() {
   return (
     <Router>
-      {/* <Navbar/> */}
       <ScrollToTop/>
       <Routes>
           <Route path='/' element={<Layout/>}>
